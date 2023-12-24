@@ -8,9 +8,10 @@ module.exports = {
       },
       colors: {
         darkgreen: "#024C27",
-        deepBlue: "#02042a"
+        deepBlue: "#02042a",
+        customGreen: '#024C27',
       },
     },
   },
   plugins: [],
-}
+};
