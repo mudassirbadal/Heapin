@@ -1,0 +1,420 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body class="font-[Poppins]  h-screen overflow-x-hidden">
+    
+    <!-- Nav-bar -->
+    <header class="mb-3 bg-darkgreen">
+        <nav class="flex justify-between lg:justify-evenly items-center w-[95%]  mx-auto  text-white">
+            <div>
+                <a href="#"><img class="h-16 my-2 rounded-sm cursor-pointer w-36" src="./img/logo.png" alt="..."></a>
+            </div>
+            <div
+                class="nav-links duration-500 md:static absolute bg-darkgreen md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex md:flex-row flex-col md:items-center md:gap-[3vw] gap-8">
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">About</a>
+                    </li>
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">Contact</a>
+                    </li>
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">Store Locator</a>
+                    </li>
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">Franchise</a>
+                    </li>
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">Pricing</a>
+                    </li>
+                    <li class=" font-2xl">
+                        <a class="text-lg transition hover:text-white" href="../Blog/index.html">Blogs</a>
+                    </li>
+                    <li class="text-2xl">
+                        <a class="text-lg transition hover:text-white" href="#">Web stories</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex items-center gap-6 text-white">
+                <!-- <button class="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Sign in</button> -->
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer md:hidden"></ion-icon>
+            </div>
+    </header>
+
+    <!-- below nav-bar -->
+    <section class="flex items-center w-full py-2 mt-24 text-center md:my-3 md:justify-center ">
+        <div class="flex flex-col w-full md:w-[62%] justify-center items-center gap-4">
+            <div class="flex">
+                <img src="./img/favicon.jpg" alt="">
+            </div>
+            <div class="text-[1.1rem] font-medium">
+                <p>Let's Take One Step Above To Your Dream</p>
+            </div>
+            <p>COMING SOON TO YOUR NEIGHBOURHOOD</p>
+            <div class="w-[80%] text-center text-xs">
+                India’s Most Trusted Retail Chain Now Expanding In Small Cities. Feel Proud By Becoming Part Of Heapin
+                Retail Grocery Franchise And Lets Walk With Us On The Success Road.
+            </div>
+        </div>
+
+        <!-- Left container -->
+        <div class="w-[38%] mx-2 hidden md:block">
+            <img class="h-[500px] w-full object-cover" src="./img/Right side first img.jpg" alt="" srcset="">
+        </div>
+
+    </section>
+
+
+    <!-- Partners section -->
+    <section class="my-4 py-4 md: flex justify-center items-center flex-col gap-[1.5vw] text-center">
+        <div class="text-4xl text-center">
+            WHY PARTNER WITH US?
+        </div>
+
+        <div class="text-xl text-gray-300">
+            WE DELIVER WHAT WE PROMISE
+        </div>
+
+        <!-- box -->
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-[4vw]">
+            <div class="bg-green-500 w-full sm:w-[45%] h-[10rem] text-white text-center p-2 flex items-center justify-center text-2xl rounded-md">
+                QUICK BREAKEVEN
+            </div>
+        
+            <div class="bg-green-500 w-full sm:w-[45%] h-[10rem] text-white text-center p-2 flex items-center justify-center text-2xl rounded-md">
+                20% RETURN ON INVESTMENT
+            </div>
+        
+            <div class="bg-green-500 w-full sm:w-[45%] h-[10rem] text-white text-center p-2 flex items-center justify-center text-2xl rounded-md">
+                HEAPIN RETAIL FRANCHISE
+            </div>
+        </div>
+        
+    </section>
+
+
+    <!-- Forms Section -->
+    <section class=" flex justify-center items-center flex-col w-[100vw]">
+        <div class="flex flex-col items-center justify-center w-full my-3 font-semibold">
+            <p class="my-3 text-4xl text-center">WANT TO BE A PART OF THE Heapin FAMILY? </p>
+            <p class="text-sm text-center text-gray-200">SUBMIT YOUR INTEREST AND WE WILL CONTACT YOU SHORTLY</p>
+        </div>
+        
+
+        <div class="flex items-center justify-between">
+            <iframe class="bg-green-300 rounded-2xl  my-7 w-[90vw] h-[500px] md:h-[1420px] md:w-[500px]"
+            src="https://docs.google.com/forms/d/e/1FAIpQLSetXgtRNbH0h30-VYCDWk2k1aJPEXZAFZB1yGg5TafWFC1IDA/viewform?embedded=true" 
+             frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        </div>
+    </section>
+
+
+    <!-- Become a Franchise  -->
+    <section class="flex flex-col items-center justify-center gap-5 py-2 bg-green-100 mb-7">
+        <div class="flex flex-col items-center justify-center gap-4 mt-16 text-left">
+            <h2 class="text-3xl font-semibold text-center">Become a Franchise Only Heapin model</h2>
+        </div>
+        <div class="w-[90vw] text-center text-sm md:w-[45rem]">
+            If you want to start your franchise of Heapin, it always welcomes you. You can get appointed to the franchise of Heapin and start your grocery shop.
+        </div>
+        <div class="bg-darkgreen text-white w-[100vw] p-5 text-center mb-5 font-light rounded-lg md:w-[45rem]">
+            We assure you every kind of support for our hand. You need not worry about that.  We help people get fresh appointments, impacting their livelihood and encouraging the local community.
+        </div>
+    </section>
+
+
+
+    <!-- Appointment -->
+    <section class="flex items-center justify-center w-full gap-3 my-3 sm:flex-col">
+       
+        <!-- Content Box-1 -->
+        <div class="flex flex-col items-start justify-center w-full gap-2 sm:flex-row">
+    
+            <!-- Image-1 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step1.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Appointment
+                </div>
+                <div class="font-light">
+                    You can get appointed as a franchisee of Heapinby proceeding through a proper process. It is easier but you need to be professional.
+                </div>
+            </div>
+    
+            <!-- Image-2 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step2.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Your Site Survey
+                </div>
+                <div class="font-light">
+                    Grocery items are the daily needs of all. But still, before giving you a franchise, we need to survey your site, the demand of your customers and based upon it, Heapinwill decide.
+                </div>
+            </div>
+        </div>
+              
+    </section>
+
+    <section class="flex items-center justify-center w-full gap-3 my-3 sm:flex-col ">
+       
+        <!-- Content Box-1 -->
+        <div class="flex flex-col items-start justify-center w-full gap-2 sm:flex-row">
+    
+            <!-- Image-1 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step3.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Appointment Franchise Verification
+                </div>
+                <div class="font-light">
+                    We need to verify few things regarding the franchise business.
+                </div>
+            </div>
+    
+            <!-- Image-2 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step4.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Area Code Activation
+                </div>
+                <div class="font-light">
+                    We have different codes based on areas where we have our franchise business. So before you start your franchise, we will assure you of an activated area code.
+                </div>
+            </div>
+        </div>
+
+
+      
+    </section>
+    
+    <section class="flex items-center justify-center w-full gap-3 my-3 sm:flex-col ">
+       
+        <!-- Content Box-1 -->
+        <div class="flex flex-col items-start justify-center w-full gap-2 sm:flex-row">
+    
+            <!-- Image-1 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step5.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Handling Over Welcome Kit
+                </div>
+                <div class="font-light">
+                    After all these steps, we will love to hand over you the welcome kit for your new franchise business.
+                </div>
+            </div>
+    
+            <!-- Image-2 -->
+            <div class="w-[100%] flex justify-center items-center text-center my-2 mt-4 sm:w-1/2">
+                <img class="w-[50%] rounded-lg md:w-[35%] text-center " src="./img/step6.jpg" alt="" srcset="">
+            </div>
+    
+            <!-- content-2 -->
+            <div class="flex flex-col items-start justify-center gap-3 mx-2 mt-4 sm:w-1/2">
+                <div class="text-xl font-semibold">
+                    Training Module
+                </div>
+                <div class="font-light">
+                    One of our executive will reach you and give you HeapinRETAIL – LAUNCH training.
+                </div>
+            </div>
+        </div>
+
+
+      
+    </section>
+
+     <!-- !Footer -->
+    <footer class="flex flex-col flex-wrap items-center justify-center w-full gap-8 p-4 space-y-3 text-white flex-w sm:flex-row bg-darkgreen">
+        
+        <!-- Box-1 -->
+        <div class="flex flex-col items-start justify-center w-full gap-5 p-2  sm:w-[60%] md:w-[30%]">
+            <!-- Heading -->
+            <div class="my-4 text-2xl font-medium">
+                Heapin
+            </div>
+            
+            <div>
+                <div class="flex flex-row items-start justify-start gap-3 space-x-2">
+                    <!-- icon -->
+                    <div class="">
+                        <i class="text-xl font-extrabold fa-solid fa-location-dot"></i>
+                    </div>
+                    <!-- text -->
+                    <div class="text-sm font-normal">
+                        1st Floor, C-65 Sector 2, Noida Sector 15, Near Sector 15 Metro Stations, Uttar Pradesh 201301
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex flex-row items-start justify-start gap-3 space-x-2">
+                    <!-- icon -->
+                    <div class="">
+                        <i class="text-xl font-extrabold fa-regular fa-phone"></i>
+                    </div>
+                    <!-- text -->
+                    <div class="text-sm font-normal">
+                        <p class="mb-3">+91-9625704468</p>
+                        <p>+91-92894 90044</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex flex-row items-start justify-start gap-3 space-x-2">
+                    <!-- icon -->
+                    <div class="">
+                        <i class="text-xl font-extrabold fa-solid fa-envelope"></i>
+                    </div>
+                    <!-- text -->
+                    <div class="text-sm font-normal">
+                        sales@7heven.com
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex flex-col items-start justify-start gap-4">
+                <div class="w-full text-xl font-normal text-start">
+                    Follow Us On
+                </div>
+                <div class="flex items-end justify-center gap-4">
+                    <a href=""><i class="text-2xl fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="text-2xl fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="text-2xl fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="text-2xl fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="text-2xl fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <!-- Box-2 -->
+        <div class="w-full  sm:w-[30%] md:w-[20%]">
+            
+            <div class="flex flex-col items-center justify-center text-center sm:text-start">
+                <p class="mb-4 text-2xl font-medium">Useful link</p>
+                <ul class="mb-3">
+                    <li class="mb-4" ><a class="text-base" href="">Home</a></li>
+                    <li class="mb-4" ><a class="text-base" href="">About</a></li>
+                    <li class="mb-4" ><a class="text-base" href="">Contact</a></li>
+                    <li class="mb-4" ><a class="text-base" href="">Store Locator</a></li>
+                    <li class="mb-4" ><a class="text-base" href="">Franchise</a></li>
+                    <li class="mb-4" ><a class="text-base" href="">Blogs</a></li>
+                </ul>
+            </div>
+            
+            
+        </div>
+
+        <!-- Box-3 -->
+        <div class="flex items-center justify-center w-full md:w-[30%]">
+            
+            <div class="w-full max-w-screen-lg mx-auto">
+                <form method="post" name="New Form" class="px-8 pt-6 pb-8 mb-4 rounded outline-none ">
+                    <input type="hidden" name="post_id" value="5756" />
+                    <input type="hidden" name="form_id" value="ac9390e" />
+                    <input type="hidden" name="referer_title" value="Own HeapinRetail Franchise - 7Heven" />
+                    <input type="hidden" name="queried_id" value="2616" />
+            
+                    <div class="mb-4">
+                        <input type="text" name="form_fields[name]" id="form-field-name" placeholder="Name" 
+                        class="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline" />
+                    </div>
+            
+                    <div class="mb-4">
+                        <input type="number" name="form_fields[email]" id="form-field-email" placeholder="Phone Number" required="required" aria-required="true" 
+                        class="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline" />
+                    </div>
+            
+                    <div class="mb-4">
+                        <input type="email" name="form_fields[field_37b54af]" id="form-field-field_37b54af" placeholder="Email" required="required" aria-required="true" 
+                        class="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline" />
+                    </div>
+            
+                    <div class="mb-4">
+                        <textarea name="form_fields[message]" id="form-field-message" rows="2" placeholder="Message" 
+                        class="w-full px-3 py-2 leading-tight text-gray-700 border rounded appearance-none focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+            
+                    <div class="e-form__buttons">
+                        <button type="submit" 
+                        class="w-full px-3 py-2 font-bold text-white bg-green-600 rounrded hover:bg-green-700 focus:outline-none focus:shadow-outline">
+                            <span class="font-normal">Send</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+            
+
+        </div>
+
+        
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <!--? JS -->
+    <script>
+        const navLinks = document.querySelector('.nav-links')
+        function onToggleMenu(e) {
+            e.name = e.name === 'menu' ? 'close' : 'menu'
+            navLinks.classList.toggle('top-[13.5%]')
+        }
+    </script>
+</body>
+
+</html>
