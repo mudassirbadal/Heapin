@@ -7,8 +7,8 @@ module.exports = {
         mullish: ["Mulish", "sans-serif"],
       },
       colors: {
-        'darkgreen':"#024C27",
-        'deepBlue': "#02042a"
+        darkgreen: "#024C27",
+        deepBlue: "#02042a"
       },
     },
   },
